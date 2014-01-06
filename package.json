@@ -3,6 +3,7 @@
   , "version": "0.0.1"
   , "private": true
   , "dependencies": {
+      "coffee-script": "x",
       "express": "3.4.0",
       "jade": "<1.0.0",
       "connect-assets": "x",
