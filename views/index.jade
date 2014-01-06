@@ -1,0 +1,30 @@
+extends layout
+
+block body
+  .wrapper
+    h1 Mai and Kai's Wedding
+    // .container.slider
+    //   img.slide(ng-repeat='photo in photos', ng-swipe-right='showPrev()', ng-swipe-left='showNext()', ng-show='isActive($index)', ng-src='{{photo.src}}')
+
+    //   a.arrow.prev(href='#', ng-click='showPrev()')
+    //     img(src= img('prev.png'))
+    //   a.arrow.next(href='#', ng-click='showNext()')
+    //     img(src= img('next.png'))
+
+    //   ul.nav
+    //     li(ng-repeat='photo in photos', ng-class="{'active':isActive($index)}")
+    //       img(src='{{photo.src}}', alt='{{photo.desc}}', title='{{photo.desc}}', ng-click='showPhoto($index);')
+
+    ul.navigation
+      li
+        a(href='biography') biography
+      li
+        a(href='hotel') hotel
+      li
+        a(href='mehndi') mehndi
+      li
+        a(href='wedding') wedding
+      li
+        a(href='contact') contact
+
+    div(ng-view)
