@@ -2,17 +2,14 @@ angular.module('myApp').controller 'AppCtrl', ['$scope',
   ($scope) ->
     # Set of Photos
     $scope.photos = [
-      src: "img/photo1"
+      src: "photo1.jpg"
       desc: "Image 01"
     ,
-      src: "img/photo2"
+      src: "photo2.jpg"
       desc: "Image 02"
     ,
-      src: "img/photo3"
+      src: "photo5.jpg"
       desc: "Image 03"
-    ,
-      src: "img/photo4"
-      desc: "Image 04"
     ]
 
     # initial image index
