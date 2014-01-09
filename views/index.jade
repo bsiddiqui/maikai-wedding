@@ -2,9 +2,20 @@ extends layout
 
 block body
   .wrapper
-    h1 Kai and Mai's Wedding
-    .container.slider
-      img.slide(ng-repeat='photo in photos', ng-swipe-right='showPrev()', ng-swipe-left='showNext()', ng-show='isActive($index)', ng-src='{{photo.src}}')
+    .top-header
+      .wedding-of The wedding of
+      table
+        tbody
+          tr
+            td.groom-name Kai
+            td.ampersand
+              img(src="http://weddingjojo.s3.amazonaws.com/assets/themes/mist/ampersand.png")
+            td.bride-name Mai
+      hr.little-line
+      .date February 7th-8th, 2014
+
+    // .container.slider
+    //   img.slide(ng-repeat='photo in photos', ng-swipe-right='showPrev()', ng-swipe-left='showNext()', ng-show='isActive($index)', ng-src='{{photo.src}}')
 
       ul.nav
         li(ng-repeat='photo in photos', ng-class="{'active':isActive($index)}")
