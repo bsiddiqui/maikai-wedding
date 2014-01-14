@@ -8,6 +8,7 @@ angular
     "ngAnimate",
     "ngRoute"
   ])
+    .value('$anchorScroll', angular.noop)
   .config ["$locationProvider", "$routeProvider",
     ($locationProvider, $routeProvider) ->
       $locationProvider.html5Mode true
@@ -31,4 +32,4 @@ angular
         templateUrl: "angular/index/biography"
 
       $routeProvider.otherwise redirectTo: "/"
-]
+  ]
